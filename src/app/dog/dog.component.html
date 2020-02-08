@@ -3,10 +3,14 @@
 <!-- <div *ngFor = "let animal of animals">{{animal.name}}</div> -->
 
 <ul *ngIf="isActive" class="forEach">
-<li *ngFor = "let item of items">{{ item.id }}. {{ item.name }}</li>
+  <li *ngFor="let item of items">{{ item.id }}. {{ item.name }}</li>
 </ul>
 
 <div *ngIf="dogsFledTheScene">Who let the dogs out?</div>
 
 <button (click)="handleClickEvent()">{{ title }}</button>
-<span class="items_count">No. of souls: {{items.length}}</span>
+<span class="items_count">No. of souls: {{ items.length }}</span>
+
+<button (click)="removeItems()">Remove</button>
+<button (click)="addItems()">Add</button>
+<input type="text" [(ngModel)]="input" />

@@ -6,18 +6,9 @@
 </ul>
 
 <app-dog [items]="animals"></app-dog>
-<button (click)="removeAnimals()">Remove Animal</button>
-<button (click)="addAnimals()">Add Animal</button>
-<input type="text" [(ngModel)]="animalinput"/>
 
 <app-dog [items]="plants"></app-dog>
-<button (click)="removePlants()">Remove Plant</button>
-<button (click)="addPlants()">Add Plant</button>
-<input type="text" [(ngModel)]="plantinput"/>
 
 <app-dog [items]="cars"></app-dog>
-<button (click)="removeCars()">Remove Car</button>
-<button (click)="addCars()">Add Car</button>
-<input type="text" [(ngModel)]="carinput"/>
 
 <router-outlet></router-outlet>
