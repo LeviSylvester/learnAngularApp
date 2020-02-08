@@ -1,0 +1,12 @@
+<p *ngIf="isActive">dog works!</p>
+
+<!-- <div *ngFor = "let animal of animals">{{animal.name}}</div> -->
+
+<ul *ngIf="isActive" class="forEach">
+<li *ngFor = "let item of items">{{ item.id }}. {{ item.name }}</li>
+</ul>
+
+<div *ngIf="dogsFledTheScene">Who let the dogs out?</div>
+
+<button (click)="handleClickEvent()">{{ title }}</button>
+<span class="items_count">No. of souls: {{items.length}}</span>
